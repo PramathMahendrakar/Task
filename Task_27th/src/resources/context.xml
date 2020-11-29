@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.pra.spring.files.Mobile" id="mobile"
+		lazy-init="true">
+		<constructor-arg value="One plus" />
+		<constructor-arg value="29000.00" type="double"></constructor-arg>
+		<property name="Item_supported" value="true"></property>
+
+	</bean>
+
+
+<!-- 	<bean class="com.pra.spring.files.Music" id="music"> -->
+<!-- 		<property name="name" value="Ramanna Hotel"> -->
+<!-- 		</property> -->
+<!-- 		<property name="type" value="true"></property> -->
+<!-- 		<property name="location" value="Nyamathi"></property> -->
+<!-- 	</bean> -->
+
+
+	<!-- <bean id="season" class="com.pra.spring.files.Season"> <constructor-arg 
+		value="34.6" type="float" /> </bean> <bean id="summerSeason" class="com.pra.spring.files.Season"> 
+		<constructor-arg value="Summer" /> </bean> <bean id="winterSeason" class="com.pra.spring.files.Season"> 
+		<constructor-arg value="Winter" /> </bean> -->
+</beans>
